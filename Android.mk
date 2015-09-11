@@ -3,7 +3,7 @@
 # Copyright 2008 Wind River Systems
 #
 
-ifeq ($(strip $(BOARD_USES_ALSA_AUDIO)),true)
+#ifeq ($(strip $(BOARD_USES_ALSA_AUDIO)),true)
 
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
@@ -44,4 +44,4 @@ LOCAL_SHARED_LIBRARIES := \
 
 include $(BUILD_SHARED_LIBRARY)
 
-endif
+#endif
