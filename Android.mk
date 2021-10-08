@@ -81,9 +81,12 @@ LOCAL_SRC_FILES := $(filter-out src/pcm/pcm_shm.c, $(LOCAL_SRC_FILES))
 LOCAL_SRC_FILES := $(filter-out src/pcm/scopes/level.c, $(LOCAL_SRC_FILES))
 LOCAL_SRC_FILES := $(filter-out src/shmarea.c, $(LOCAL_SRC_FILES))
 
-LOCAL_SHARED_LIBRARIES := \
+#LOCAL_SHARED_LIBRARIES := \
     libdl
+
+LOCAL_DISABLE_FATAL_LINKER_WARNINGS	= true
 
 include $(BUILD_SHARED_LIBRARY)
 
 #endif
+
